@@ -18,7 +18,7 @@ const ProfileAbout = ({
     </p>
     <div class="line"></div>
     </Fragment>
-)};
+)}
     
     <h2 class="text-primary">Skill Set</h2>
     <div class="skills">
@@ -26,7 +26,7 @@ const ProfileAbout = ({
           <div key={index} className="p-1">
             <i className="fas fa-check"></i> {skill}
           </div>
-      ))};
+      ))}
     </div>
   </div>;
 
