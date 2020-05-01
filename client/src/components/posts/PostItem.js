@@ -14,14 +14,13 @@ const PostItem = ({
 }) => (
     <div class="post bg-white p-1 my-1">
         <div>
-        <a href="profile.html">
+        <Link to={`/profile/${user}`}>
             <img
             class="round-img"
             src={avatar}
-            alt=""
-            />
+            alt="" />
             <h4>{name}</h4>
-        </a>
+        </Link>
         </div>
         <div>
         <p class="my-1">
@@ -48,7 +47,7 @@ const PostItem = ({
         {!auth.loading && user === auth.user._id && (
             <button onClick={e => deletePost(_id)} type="button" class="btn btn-danger">
                 <i class="fas fa-times"></i>
-                </button>
+            </button>
         )}
         
         </div>
